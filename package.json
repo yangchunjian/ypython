@@ -1,15 +1,40 @@
 {
   "name": "ypython",
-  "version": "1.0.0",
-  "description": "Python项目文档",
+  "version": "2.0.0",
+  "description": "ypython tool",
+  "license": "MulanPSL2",
+  "type": "module",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "clean": "vuepress clean docs"
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache",
+    "docs:dev": "vuepress dev docs",
+    "docs:update-package": "pnpm dlx vp-update"
   },
+  "packageManager": "pnpm@9.11.0",
   "devDependencies": {
-    "vuepress": "^2.0.0-rc.14",
-    "vuepress-theme-hope": "^2.0.0-rc.14"
+    "@vue/repl": "^4.4.2",
+    "@vuepress/bundler-vite": "2.0.0-rc.15",
+    "@vuepress/plugin-copyright": "2.0.0-rc.45",
+    "@vuepress/plugin-feed": "2.0.0-rc.47",
+    "@vuepress/plugin-search": "2.0.0-rc.47",
+    "@vuepress/plugin-watermark": "2.0.0-rc.45",
+    "chart.js": "^4.4.4",
+    "echarts": "^5.5.1",
+    "flowchart.ts": "^3.0.1",
+    "katex": "^0.16.11",
+    "markmap-lib": "^0.17.2",
+    "markmap-toolbar": "^0.17.2",
+    "markmap-view": "^0.17.2",
+    "mermaid": "^11.2.0",
+    "reveal.js": "^5.1.0",
+    "sass-embedded": "1.79.3",
+    "sass-loader": "16.0.2",
+    "vue": "^3.5.8",
+    "vuepress": "2.0.0-rc.15",
+    "vuepress-plugin-social-share": "2.0.0-beta.22",
+    "vuepress-theme-hope": "2.0.0-rc.56"
   },
-  "packageManager": "pnpm@8.15.0"
-} 
+  "dependencies": {
+    "watermark-js-plus": "^1.5.6"
+  }
+}
