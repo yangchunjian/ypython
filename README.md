@@ -1,2 +1,0 @@
-# ypython
-Python
