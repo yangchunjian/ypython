@@ -1,10 +1,13 @@
 import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
+import { viteBundler } from '@vuepress/bundler-vite';
 
 export default defineUserConfig({
   lang: "zh-CN",
   title: "YPython",
   description: "Python项目文档",
+  bundler: viteBundler(),
+  
   
   theme: hopeTheme({
     // 主题配置
