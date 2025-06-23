@@ -8,18 +8,18 @@ export default defineUserConfig({
   
   theme: hopeTheme({
     // 主题配置
-    hostname: "https://example.com",
+    hostname: "https://aia.fun",
     
     author: {
       name: "YPython Team",
-      url: "https://github.com/your-username/ypython",
+      url: "https://github.com/yangchunjian/ypython",
     },
     
     iconAssets: "fontawesome-with-brands",
     
     logo: "/logo.png",
     
-    repo: "your-username/ypython",
+    repo: "yangchunjian/ypython",
     
     docsDir: "docs",
     
